@@ -1,6 +1,6 @@
-# Orbit Fighter Prototype 🛰️
+# Orbit Fighter Prototype 
 
-Protótipo experimental de combate espacial 2D desenvolvido no **GameMaker Studio 2**. Este projeto foca no estudo de física vetorial, detecção de colisão circular e sistemas de entidades acopladas.
+Protótipo experimental de combate 2D desenvolvido no **GameMaker Studio 2**. Este projeto foca no estudo de física vetorial, detecção de colisão circular e sistemas de entidades acopladas.
 
 ## 🚀 Objetivos Técnicos
 - **Física de Inércia:** Movimentação baseada em aceleração e fricção para simular o vácuo.
