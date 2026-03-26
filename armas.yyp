@@ -40,7 +40,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"armas",
   "resources":[
@@ -77,8 +77,8 @@
     {"id":{"name":"obj_unarmed_trail","path":"objects/obj_unarmed_trail/obj_unarmed_trail.yy",},},
     {"id":{"name":"obj_walls","path":"objects/obj_walls/obj_walls.yy",},},
     {"id":{"name":"obj_walls2","path":"objects/obj_walls2/obj_walls2.yy",},},
-    {"id":{"name":"rm_x1","path":"rooms/rm_x1/rm_x1.yy",},},
-    {"id":{"name":"scripts","path":"scripts/scripts/scripts.yy",},},
+    {"id":{"name":"rm_fight_room","path":"rooms/rm_fight_room/rm_fight_room.yy",},},
+    {"id":{"name":"scr_basics_scripts","path":"scripts/scr_basics_scripts/scr_basics_scripts.yy",},},
     {"id":{"name":"spr_axe_player","path":"sprites/spr_axe_player/spr_axe_player.yy",},},
     {"id":{"name":"spr_dagger","path":"sprites/spr_dagger/spr_dagger.yy",},},
     {"id":{"name":"spr_dagger02","path":"sprites/spr_dagger02/spr_dagger02.yy",},},
@@ -98,7 +98,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_x1","path":"rooms/rm_x1/rm_x1.yy",},},
+    {"roomId":{"name":"rm_fight_room","path":"rooms/rm_fight_room/rm_fight_room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
