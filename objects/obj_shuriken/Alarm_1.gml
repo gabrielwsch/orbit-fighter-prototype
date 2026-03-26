@@ -1,0 +1,1 @@
+create_shuriken = 1

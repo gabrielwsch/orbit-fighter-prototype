@@ -1,0 +1,2 @@
+instance_destroy(obj_shuriken)
+instance_destroy(obj_shuriken2)
