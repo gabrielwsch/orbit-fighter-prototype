@@ -1,40 +1,19 @@
-trails()
-
-if life <= 0 instance_destroy(id)
-/*
-for (var ii = 0; ii < array_length(global.players); ii++){
-	if global.players[ii] == object_index {
-		myself = global.players[ii]
-		trails()
-	}
-}
-*/
-
-
-var deve_rebater = false;
-
-// Rebote com parede
-if (place_meeting(x + hspeed, y + vspeed, obj_walls)) {
-	trails(0)
-    move_bounce_solid(true);
+// 1. Gestão de Vida
+if (life <= 0) {
+    instance_destroy();
+    exit; // Interrompe o evento aqui para não calcular o resto se o objeto morreu
 }
 
-// Rebote com outros players (sem usar with)
-var inst_total = instance_number(obj_player_base);
-for (var i = 0; i < inst_total; i++) {
-    var outro = instance_find(obj_player_base, i);
-    
-    if (outro.id != id) {
-        if (place_meeting(x + hspeed, y + vspeed, outro)) {
-            deve_rebater = true;
-			
-            break; // já achou, não precisa continuar
-        }
-    }
-}
+// 2. Efeitos Visuais
+trails();
 
-// Se colidiu com outro, aplica rebote
-if (deve_rebater) {
-	trails(0)
+// 3. Verificação de Colisões (Paredes e Outros Players)
+// Usamos instance_place para evitar loops manuais pesados
+var _colisao_parede = place_meeting(x + hspeed, y + vspeed, obj_walls);
+var _colisao_player = instance_place(x + hspeed, y + vspeed, obj_player_base);
+
+// Se houver qualquer colisão (e se a colisão de player não for comigo mesmo)
+if (_colisao_parede || (_colisao_player != noone && _colisao_player != id)) {
+    trails(0);
     move_bounce_solid(true);
 }

@@ -191,8 +191,8 @@
   "maintainGms1Font":false,
   "name":"Font2",
   "parent":{
-    "name":"Fontes",
-    "path":"folders/Fontes.yy",
+    "name":"Players",
+    "path":"folders/Objetos/Players.yy",
   },
   "pointRounding":0,
   "ranges":[
